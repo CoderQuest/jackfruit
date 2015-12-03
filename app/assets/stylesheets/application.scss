@@ -14,3 +14,9 @@
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+table.table-inline {
+	display: inline;
+	float: left;
+	width: auto;
+}

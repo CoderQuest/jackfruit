@@ -12,6 +12,31 @@
 	<%= f.submit%>
 <% end %>
 
+<!-- <table class="table table-striped table-inline">
+	<tr>
+		<th> # </th>
+	</tr>
+	<%for number in 1..@stocks.count %>
+		<tr>
+			<td><%=number%></td>
+		</tr>
+	<% end %>
+</table> -->
 <% @stocks.each do |stock|%>
-<%= stock.stock_name %>
+	<% if stock.stock_name != nil%>
+		<table class="table table-striped table-inline">		
+			<tr>
+				<th><%= stock.stock_name %></th>
+			</tr> 
+			<tr>
+				<td><%= stock.val_1 %></td>
+			</tr>
+			<tr>
+				<td><%= stock.val_2 %></td>
+			</tr>
+			<tr>
+				<td><%= stock.val_3 %></td>
+			</tr>
+		</table>
+	<% end %>
 <%end%>
