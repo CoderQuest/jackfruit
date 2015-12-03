@@ -2,12 +2,12 @@
 
 one:
   stock_name: MyString
-  val_1: MyString
-  val_2: MyString
-  val_3: MyString
+  val_1: 1
+  val_2: 1
+  val_3: 1
 
 two:
   stock_name: MyString
-  val_1: MyString
-  val_2: MyString
-  val_3: MyString
+  val_1: 1
+  val_2: 1
+  val_3: 1

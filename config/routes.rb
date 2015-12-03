@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  root 'finance_table#index'
+  resources :stocks
+
+  root 'stocks#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

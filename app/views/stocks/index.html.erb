@@ -1,0 +1,17 @@
+<h1>Enter your stock</h1>
+
+<%= form_for @stock, :url => {action: 'create'} do |f|%>
+  <%= f.label :stock_name %>
+	<%= f.text_field :stock_name %>
+	<%= f.label :val_1 %>
+	<%= f.number_field :val_1 %>
+	<%= f.label :val_2 %>
+	<%= f.number_field :val_2 %>
+	<%= f.label :val_3 %>
+	<%= f.number_field :val_3 %>
+	<%= f.submit%>
+<% end %>
+
+<% @stocks.each do |stock|%>
+<%= stock.stock_name %>
+<%end%>
